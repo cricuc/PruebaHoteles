@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="almundotest.com.pruebahoteles.controllers.DetalleHotelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            style="@style/StyleTextNegroGrande"
+            android:text=""/>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:id="@+id/ivStar1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_star" />
+
+            <ImageView
+                android:id="@+id/ivStar2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_star" />
+
+            <ImageView
+                android:id="@+id/ivStar3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_star" />
+
+            <ImageView
+                android:id="@+id/ivStar4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_star" />
+
+            <ImageView
+                android:id="@+id/ivStar5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_star" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            style="@style/StyleTextAmarilloNormal"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tvFrecuenciaPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:text="Precio Por Noche"
+            style="@style/StyleTextGrisPequenio" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            style="@style/StyleTextNegroNormal"
+            android:text="Disponibilidad:"/>
+        <ImageView
+            android:id="@+id/ivEstado"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher_round" />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tvUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textColor="@color/Dark"
+            android:text=""/>
+        <EditText
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:editable="false"
+            android:scrollbars="vertical"/>
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

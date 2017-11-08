@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="almundotest.com.pruebahoteles.controllers.HotelesActivity"
+    tools:showIn="@layout/activity_hoteles">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_marginTop="@dimen/toolbar"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnONombre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ordenar por nombre"/>
+
+            <Button
+                android:id="@+id/btnOEstrellas"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ordenar por estrellas"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvHoteles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:text="Hoteles"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/White" />
+        <EditText android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:hint="Buscar hoteles..."
+            android:inputType="text"/>
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/lvHoteles"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:divider="@color/Orange"
+            android:dividerHeight="2px"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</FrameLayout>

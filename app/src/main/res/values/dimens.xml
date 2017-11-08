@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="toolbar">70dp</dimen>
+    <dimen name="texto_normal">15dp</dimen>
+    <dimen name="texto_pequenio">10dp</dimen>
+    <dimen name="texto_grande">25dp</dimen>
+</resources>

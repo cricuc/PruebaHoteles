@@ -1,0 +1,12 @@
+{
+	"name": "almundo.com.test",
+	"version": "0.0.1",
+	"description": "Prueba práctica almundo.com",
+	"main": "server.js",
+	"dependencies": {
+		"express": "latest",
+		"mongoose": "latest",
+		"body-parser": "latest",
+		"method-override": "latest"
+	}
+}
